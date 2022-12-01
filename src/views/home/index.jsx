@@ -1,9 +1,6 @@
-import React, { memo, useEffect } from "react";
-import XYRequest from "@/services";
+import React, { memo } from "react";
+
 const Home = memo(() => {
-  useEffect(() => {
-    XYRequest.get({ url: "/home/highscore" }).then((res) => console.log(res));
-  }, []);
   return <div>Home</div>;
 });
 
